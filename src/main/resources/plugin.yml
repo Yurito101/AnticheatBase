@@ -1,0 +1,12 @@
+name: AnticheatBase
+version: ${project.version}
+main: me.yurito.anticheatbase.Anticheat
+api-version: 1.13
+authors: [Yurito]
+prefix: Anticheat
+description: ${project.description}
+depend: [ProtocolLib]
+commands:
+  anticheat:
+    description: The main anticheat command!
+    aliases: [ac]
