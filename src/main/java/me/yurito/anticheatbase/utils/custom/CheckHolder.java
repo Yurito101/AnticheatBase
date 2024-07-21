@@ -38,14 +38,16 @@ public class CheckHolder {
         addChecks(
 
                 /*
-                Aim
+                AimAssist
                  */
                 new AimA(this.profile),
                 new AimA1(this.profile),
+
                 /*
                 BadPackets
                  */
                 new BadPacketsA(this.profile),
+
                 /*
                 Speed
                  */
