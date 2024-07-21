@@ -1,6 +1,8 @@
 package me.yurito.anticheatbase.utils.custom;
 
 import me.yurito.anticheatbase.checks.annotations.Testing;
+import me.yurito.anticheatbase.checks.impl.aim.AimA;
+import me.yurito.anticheatbase.checks.impl.aim.AimA1;
 import me.yurito.anticheatbase.checks.impl.speed.SpeedA;
 import me.yurito.anticheatbase.checks.types.Check;
 import me.yurito.anticheatbase.managers.profile.Profile;
@@ -34,6 +36,11 @@ public class CheckHolder {
          */
         addChecks(
 
+                /*
+                Aim
+                 */
+                new AimA(this.profile),
+                new AimA1(this.profile),
                 /*
                 Speed
                  */
