@@ -73,7 +73,8 @@ public class Checks implements Initializer {
     public enum Setting {
         AIM("aim", "", "Aim Check"),
         AIM_A("aim.a", true, "Should we enable this module?"),
-        AIM_A1("aim.a1", true, "Should we enable this module?"),
+        AIM_B("aim.b", true, "Should we enable this module?"),
+        AIM_C("aim.c", true, "Should we enable this module?"),
         AIM_MAX_VL("aim.max_vl", 10, "The maximum violation amount a player needs to reach in order to get punished"),
         AIM_COMMANDS("aim.commands", Collections.singletonList("kick %player% Unfair Advantage"), "The commands that will get executed once a player reaches the maximum violation amount"),
 
