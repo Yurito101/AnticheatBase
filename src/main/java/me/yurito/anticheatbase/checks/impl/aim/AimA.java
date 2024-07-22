@@ -8,7 +8,7 @@ import me.yurito.anticheatbase.processors.Packet;
 
 public class AimA extends Check {
     public AimA(Profile profile) {
-        super(profile, CheckType.AIM, "A", "Checks for Aim");
+        super(profile, CheckType.AIM, "A", "Checks for simple size");
     }
 
     @Override
@@ -17,11 +17,11 @@ public class AimA extends Check {
 
         RotationData data = profile.getRotationData();
 
-        final float deltaY = data.getDeltaYaw();
-        final float deltaP = data.getDeltaPitch();
+        final float deltaYaw = data.getDeltaYaw();
+        final float deltaPitch = data.getDeltaPitch();
 
-        final boolean invaildPitch = deltaP > 0F && deltaP < .005F && deltaY > 2.5F;
-        final boolean invaildYaw = deltaY > 0F && deltaY < .005F && deltaP > 2.5F;
+        final boolean invaildPitch = deltaPitch > 0F && deltaPitch < .005F && deltaYaw > 2.5F;
+        final boolean invaildYaw = deltaYaw > 0F && deltaYaw < .005F && deltaPitch > 2.5F;
 
         if (invaildPitch || invaildYaw) {
             if (increaseBuffer() > 5) {

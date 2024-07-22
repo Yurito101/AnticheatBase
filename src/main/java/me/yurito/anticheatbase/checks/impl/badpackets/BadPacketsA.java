@@ -7,7 +7,7 @@ import me.yurito.anticheatbase.processors.Packet;
 
 public class BadPacketsA extends Check {
     public BadPacketsA(Profile profile) {
-        super(profile, CheckType.BADPACKETS, "A", "Checks for BadPackets");
+        super(profile, CheckType.BADPACKETS, "A", "Checks if the player pitch is an impossible value.");
     }
 
     @Override
