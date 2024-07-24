@@ -5,6 +5,7 @@ import me.yurito.anticheatbase.checks.impl.aim.AimA;
 import me.yurito.anticheatbase.checks.impl.aim.AimB;
 import me.yurito.anticheatbase.checks.impl.aim.AimC;
 import me.yurito.anticheatbase.checks.impl.badpackets.BadPacketsA;
+import me.yurito.anticheatbase.checks.impl.badpackets.BadPacketsB;
 import me.yurito.anticheatbase.checks.impl.speed.SpeedA;
 import me.yurito.anticheatbase.checks.types.Check;
 import me.yurito.anticheatbase.managers.profile.Profile;
@@ -49,6 +50,7 @@ public class CheckHolder {
                 BadPackets
                  */
                 new BadPacketsA(this.profile),
+                new BadPacketsB(this.profile),
 
                 /*
                 Speed
