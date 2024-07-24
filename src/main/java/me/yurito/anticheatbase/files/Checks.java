@@ -80,6 +80,7 @@ public class Checks implements Initializer {
 
         BADPACKETS("badpackets", "", "BadPackets Check"),
         BADPACKETS_A("badpackets.a", true, "Should we enable this module?"),
+        BADPACKETS_B("badpackets.b", true, "Should we enable this module?"),
         BADPACKETS_MAX_VL("badpackets.max_vl", 10, "The maximum violation amount a player needs to reach in order to get punished"),
         BADPACKETS_COMMANDS("badpackets.commands", Collections.singletonList("kick %player% Unfair Advantage"), "The commands that will get executed once a player reaches the maximum violation amount"),
 
