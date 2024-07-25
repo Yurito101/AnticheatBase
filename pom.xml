@@ -14,10 +14,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
-
     <name>AnticheatBase</name>
-
-    <description>A simple and efficient anticheat base</description>
 
     <repositories>
         <repository>
@@ -41,7 +38,6 @@
             <url>https://jitpack.io</url>
         </repository>
     </repositories>
-
     <dependencies>
         <dependency>
             <groupId>org.spigotmc</groupId>
@@ -74,7 +70,6 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
-
     <build>
         <finalName>${project.name}</finalName>
         <defaultGoal>clean install package</defaultGoal>
@@ -85,7 +80,6 @@
             </resource>
         </resources>
         <plugins>
-
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
@@ -99,8 +93,6 @@
                     </execution>
                 </executions>
             </plugin>
-
         </plugins>
     </build>
-
 </project>
