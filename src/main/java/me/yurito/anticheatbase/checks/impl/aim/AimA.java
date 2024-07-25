@@ -8,7 +8,7 @@ import me.yurito.anticheatbase.processors.Packet;
 
 public class AimA extends Check {
     public AimA(Profile profile) {
-        super(profile, CheckType.AIM, "A", "Checks for simple size");
+        super(profile, CheckType.AIM, "A", "Checks for sample size");
     }
 
     @Override
