@@ -1,10 +1,7 @@
 package me.yurito.anticheatbase.utils.custom;
 
 import me.yurito.anticheatbase.checks.annotations.Testing;
-import me.yurito.anticheatbase.checks.impl.aim.AimA;
-import me.yurito.anticheatbase.checks.impl.aim.AimA1;
-import me.yurito.anticheatbase.checks.impl.aim.AimB;
-import me.yurito.anticheatbase.checks.impl.aim.AimC;
+import me.yurito.anticheatbase.checks.impl.aim.*;
 import me.yurito.anticheatbase.checks.impl.badpackets.BadPacketsA;
 import me.yurito.anticheatbase.checks.impl.badpackets.BadPacketsB;
 import me.yurito.anticheatbase.checks.impl.speed.SpeedA;
@@ -46,6 +43,7 @@ public class CheckHolder {
                 new AimA(this.profile),
                 new AimA1(this.profile),
                 new AimB(this.profile),
+                new AimB1(this.profile),
                 new AimC(this.profile),
 
                 /*
