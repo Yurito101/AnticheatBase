@@ -47,6 +47,7 @@ public class CheckHolder {
                 new AimC(this.profile),
                 new AimD(this.profile),
                 new AimE(this.profile),
+                new AimF(this.profile),
 
                 /*
                 BadPackets
