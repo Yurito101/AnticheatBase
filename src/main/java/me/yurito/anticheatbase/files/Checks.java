@@ -89,6 +89,12 @@ public class Checks implements Initializer {
         BADPACKETS_MAX_VL("badpackets.max_vl", 10, "The maximum violation amount a player needs to reach in order to get punished"),
         BADPACKETS_COMMANDS("badpackets.commands", Collections.singletonList("kick %player% Unfair Advantage"), "The commands that will get executed once a player reaches the maximum violation amount"),
 
+        FLIGHT("flight", "", "Flight Check"),
+        FLIGHT_A("flight.a", true, "Should we enable this module?"),
+        FLIGHT_B("flight.b", true, "Should we enable this module?"),
+        FLIGHT_MAX_VL("flight.max_vl", 10, "The maximum violation amount a player needs to reach in order to get punished"),
+        FLIGHT_COMMANDS("flight.commands", Collections.singletonList("kick %player% Unfair Advantage"), "The commands that will get executed once a player reaches the maximum violation amount"),
+
         SPEED("speed", "", "Speed Check"),
         SPEED_A("speed.a", true, "Should we enable this module?"),
         SPEED_MAX_VL("speed.max_vl", 10, "The maximum violation amount a player needs to reach in order to get punished"),
