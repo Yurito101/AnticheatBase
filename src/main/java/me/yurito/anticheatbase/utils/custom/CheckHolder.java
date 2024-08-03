@@ -4,6 +4,8 @@ import me.yurito.anticheatbase.checks.annotations.Testing;
 import me.yurito.anticheatbase.checks.impl.aim.*;
 import me.yurito.anticheatbase.checks.impl.badpackets.BadPacketsA;
 import me.yurito.anticheatbase.checks.impl.badpackets.BadPacketsB;
+import me.yurito.anticheatbase.checks.impl.flight.FlightA;
+import me.yurito.anticheatbase.checks.impl.flight.FlightB;
 import me.yurito.anticheatbase.checks.impl.speed.SpeedA;
 import me.yurito.anticheatbase.checks.types.Check;
 import me.yurito.anticheatbase.managers.profile.Profile;
@@ -54,6 +56,12 @@ public class CheckHolder {
                  */
                 new BadPacketsA(this.profile),
                 new BadPacketsB(this.profile),
+
+                /*
+                Flight
+                 */
+                new FlightA(this.profile),
+                new FlightB(this.profile),
 
                 /*
                 Speed
