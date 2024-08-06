@@ -6,6 +6,7 @@ import me.yurito.anticheatbase.checks.impl.badpackets.BadPacketsA;
 import me.yurito.anticheatbase.checks.impl.badpackets.BadPacketsB;
 import me.yurito.anticheatbase.checks.impl.flight.FlightA;
 import me.yurito.anticheatbase.checks.impl.flight.FlightB;
+import me.yurito.anticheatbase.checks.impl.killaura.KillAuraA;
 import me.yurito.anticheatbase.checks.impl.speed.SpeedA;
 import me.yurito.anticheatbase.checks.types.Check;
 import me.yurito.anticheatbase.managers.profile.Profile;
@@ -63,6 +64,11 @@ public class CheckHolder {
                  */
                 new FlightA(this.profile),
                 new FlightB(this.profile),
+
+                /*
+                KillAura
+                 */
+                new KillAuraA(this.profile),
 
                 /*
                 Speed

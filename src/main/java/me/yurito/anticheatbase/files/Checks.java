@@ -96,6 +96,11 @@ public class Checks implements Initializer {
         FLIGHT_MAX_VL("flight.max_vl", 10, "The maximum violation amount a player needs to reach in order to get punished"),
         FLIGHT_COMMANDS("flight.commands", Collections.singletonList("kick %player% Unfair Advantage"), "The commands that will get executed once a player reaches the maximum violation amount"),
 
+        KILLAURA("killaura", "", "KillAura Check"),
+        KILLAURA_A("killaura.a", true, "Should we enable this module?"),
+        KILLAURA_MAX_VL("killaura.max_vl", 10, "The maximum violation amount a player needs to reach in order to get punished"),
+        KILLAURA_COMMANDS("killaura.commands", Collections.singletonList("kick %player% Unfair Advantage"), "The commands that will get executed once a player reaches the maximum violation amount"),
+
         SPEED("speed", "", "Speed Check"),
         SPEED_A("speed.a", true, "Should we enable this module?"),
         SPEED_MAX_VL("speed.max_vl", 10, "The maximum violation amount a player needs to reach in order to get punished"),
