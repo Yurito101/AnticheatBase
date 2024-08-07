@@ -7,6 +7,7 @@ import org.bukkit.util.Vector;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
+import java.util.Collection;
 
 public final class MathUtils {
 
@@ -107,5 +108,20 @@ public final class MathUtils {
 
     public static double getAbsoluteDelta(final double one, final double two) {
         return Math.abs(Math.abs(one) - Math.abs(two));
+    }
+
+    public static double getAverage(final Collection<? extends Number> data) {
+        if (data == null || data.isEmpty()) {
+            return 0.0;
+        }
+        double sum = 0.0;
+        for (final Number number : data) {
+            sum += number.doubleValue();
+        }
+        return sum / data.size();
+    }
+
+    public static double getCps(final Collection<? extends Number> data) {
+        return 20.0 / getAverage(data) * 50.0;
     }
 }
