@@ -98,6 +98,7 @@ public class Checks implements Initializer {
 
         KILLAURA("killaura", "", "KillAura Check"),
         KILLAURA_A("killaura.a", true, "Should we enable this module?"),
+        KILLAURA_B("killaura.b", true, "Should we enable this module?"),
         KILLAURA_MAX_VL("killaura.max_vl", 10, "The maximum violation amount a player needs to reach in order to get punished"),
         KILLAURA_COMMANDS("killaura.commands", Collections.singletonList("kick %player% Unfair Advantage"), "The commands that will get executed once a player reaches the maximum violation amount"),
 
