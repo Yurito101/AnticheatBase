@@ -13,6 +13,7 @@ public enum CheckType {
     GROUNDSPOOF("GroundSpoof", CheckCategory.MOVEMENT),
     KILLAURA("KillAura", CheckCategory.COMBAT),
     SCAFFOLD("Scaffold", CheckCategory.WORLD),
+    STEP("Step", CheckCategory.MOVEMENT),
     SPEED("Speed", CheckCategory.MOVEMENT),
     MOTION("Motion", CheckCategory.MOVEMENT),
     NOFALL("NoFall", CheckCategory.MOVEMENT),
