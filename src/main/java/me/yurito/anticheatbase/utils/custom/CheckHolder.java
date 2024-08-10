@@ -2,6 +2,7 @@ package me.yurito.anticheatbase.utils.custom;
 
 import me.yurito.anticheatbase.checks.annotations.Testing;
 import me.yurito.anticheatbase.checks.impl.aim.*;
+import me.yurito.anticheatbase.checks.impl.autoclicker.AutoClickerA;
 import me.yurito.anticheatbase.checks.impl.badpackets.BadPacketsA;
 import me.yurito.anticheatbase.checks.impl.badpackets.BadPacketsB;
 import me.yurito.anticheatbase.checks.impl.flight.FlightA;
@@ -53,6 +54,11 @@ public class CheckHolder {
                 new AimE(this.profile),
                 new AimF(this.profile),
                 new AimG(this.profile),
+
+                /*
+                AutoClicker
+                 */
+                new AutoClickerA(this.profile),
 
                 /*
                 BadPackets
