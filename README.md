@@ -2,7 +2,7 @@
 
 A simple Anticheat Base for Minecraft, Made with perfomance in mind This base utilizes ProtocolLib.
 
-**Features**
+### Features
 * Multithreaded design scaling by your server's hardware.
 * Lots of useful Utility classes and methods.
 * High perfomance Check Manager system
