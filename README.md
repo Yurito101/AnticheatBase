@@ -10,3 +10,4 @@ A simple Anticheat Base for Minecraft, Made with perfomance in mind This base ut
 * Easy to use Theme system
 * Easy to use Command system
 * Easy to use NMS system
+* High perfomance packet wrapping system with caching
