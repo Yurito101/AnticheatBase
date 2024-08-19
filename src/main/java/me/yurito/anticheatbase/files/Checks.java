@@ -86,6 +86,7 @@ public class Checks implements Initializer {
 
         AUTOCLICKER("autoclicker", "", "AutoClicker Check"),
         AUTOCLICKER_A("autoclicker.a", true, "Should we enable this module?"),
+        AUTOCLICKER_B("autoclicker.b", true, "Should we enable this module?"),
         AUTOCLICKER_MAX_VL("autoclicker.max_vl", 10, "The maximum violation amount a player needs to reach in order to get punished"),
         AUTOCLICKER_COMMANDS("autoclicker.commands", Collections.singletonList("kick %player% Unfair Advantage"), "The commands that will get executed once a player reaches the maximum violation amount"),
 
