@@ -56,6 +56,7 @@ public class CheckHolder {
                 new AimE(this.profile),
                 new AimF(this.profile),
                 new AimG(this.profile),
+                new AimH(this.profile),
 
                 /*
                 AutoClicker
