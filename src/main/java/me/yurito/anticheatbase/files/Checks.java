@@ -105,6 +105,11 @@ public class Checks implements Initializer {
         FLIGHT_MAX_VL("flight.max_vl", 10, "The maximum violation amount a player needs to reach in order to get punished"),
         FLIGHT_COMMANDS("flight.commands", Collections.singletonList("kick %player% Unfair Advantage"), "The commands that will get executed once a player reaches the maximum violation amount"),
 
+        GROUNDSPOOF("groundspoof", "", "GroundSpoof Check"),
+        GROUNDSPOOF_A("groundspoof.a", true, "Should we enable this module?"),
+        GROUNDSPOOF_MAX_VL("groundspoof.max_vl", 10, "The maximum violation amount a player needs to reach in order to get punished"),
+        GROUNDSPOOF_COMMANDS("groundspoof.commands", Collections.singletonList("kick %player% Unfair Advantage"), "The commands that will get executed once a player reaches the maximum violation amount"),
+
         KILLAURA("killaura", "", "KillAura Check"),
         KILLAURA_A("killaura.a", true, "Should we enable this module?"),
         KILLAURA_B("killaura.b", true, "Should we enable this module?"),
