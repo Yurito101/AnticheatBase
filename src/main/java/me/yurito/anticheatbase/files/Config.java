@@ -16,7 +16,7 @@ public class Config implements Initializer {
             "|                                                                                              |",
             "|                                          Anticheat                                           |",
             "|                                                                                              |",
-            "|                          Github: https://github.com/Yurito101/AnticheatBase                  |",
+            "|                          Github: https://github.com/YuritoX/AnticheatBase                    |",
             "|                                                                                              |",
             "|                                         Author: Yurito                                       |",
             "|                                                                                              |",
