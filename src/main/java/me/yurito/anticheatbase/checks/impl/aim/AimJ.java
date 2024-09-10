@@ -13,7 +13,6 @@ public class AimJ extends Check {
     @Override
     public void handle(Packet packet) {
         if (packet.isRotation()) {
-
             final float deltaYaw = profile.getRotationData().getDeltaYaw();
             final float deltaPitch = profile.getRotationData().getDeltaPitch();
 
