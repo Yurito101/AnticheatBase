@@ -2,6 +2,7 @@ package me.yurito.anticheatbase.utils.custom;
 
 import me.yurito.anticheatbase.managers.profile.Profile;
 import me.yurito.anticheatbase.playerdata.data.impl.MovementData;
+import me.yurito.anticheatbase.playerdata.data.impl.RotationData;
 
 /**
  * A simple class that we'll be using for exempting some checks, We'll cache the booleans every tick to
@@ -21,14 +22,37 @@ public class Exempt {
         this.profile = profile;
     }
 
-    private boolean movement, velocity, jesus, elytra, vehicle, autoclicker, aim;
+    private boolean aim, autoclicker, cinematic, elytra, jesus, movement, velocity, vehicle;
 
     public void handleExempts(long timeStamp) {
 
         MovementData movementData = profile.getMovementData();
+        RotationData rotationData = profile.getRotationData();
 
         //Example
         this.movement = movementData.getDeltaXZ() == 0D && movementData.getDeltaY() == 0D;
+
+        this.cinematic = rotationData.getCinematicProcessor().isCinematic();
+    }
+
+    public boolean aim() {
+        return this.aim;
+    }
+
+    public boolean autoclicker() {
+        return this.autoclicker;
+    }
+
+    public boolean cinematic() {
+        return this.cinematic;
+    }
+
+    public boolean elytra() {
+        return this.elytra;
+    }
+
+    public boolean jesus() {
+        return this.jesus;
     }
 
     public boolean movement() {
@@ -37,22 +61,6 @@ public class Exempt {
 
     public boolean velocity() {
         return this.velocity;
-    }
-
-    public boolean jesus() {
-        return this.jesus;
-    }
-
-    public boolean autoclicker() {
-        return this.autoclicker;
-    }
-
-    public boolean aim() {
-        return this.aim;
-    }
-
-    public boolean elytra() {
-        return this.elytra;
     }
 
     public boolean vehicle() {
