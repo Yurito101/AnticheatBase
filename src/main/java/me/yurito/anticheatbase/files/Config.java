@@ -14,11 +14,11 @@ public class Config implements Initializer {
     private static final String[] HEADER = new String[]{
             "+----------------------------------------------------------------------------------------------+",
             "|                                                                                              |",
-            "|                                          Anticheat                                           |",
+            "|                                        AnticheatBase                                         |",
             "|                                                                                              |",
-            "|                          Github: https://github.com/YuritoX/AnticheatBase                    |",
+            "|                         Github: https://github.com/Yurito101/AnticheatBase                   |",
             "|                                                                                              |",
-            "|                                         Author: Yurito                                       |",
+            "|                                        Author: Yurito                                        |",
             "|                                                                                              |",
             "+----------------------------------------------------------------------------------------------+"
     };
