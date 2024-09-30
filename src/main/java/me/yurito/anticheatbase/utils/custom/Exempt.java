@@ -3,6 +3,7 @@ package me.yurito.anticheatbase.utils.custom;
 import me.yurito.anticheatbase.managers.profile.Profile;
 import me.yurito.anticheatbase.playerdata.data.impl.MovementData;
 import me.yurito.anticheatbase.playerdata.data.impl.RotationData;
+import me.yurito.anticheatbase.utils.ServerVersion;
 
 /**
  * A simple class that we'll be using for exempting some checks, We'll cache the booleans every tick to
@@ -22,7 +23,7 @@ public class Exempt {
         this.profile = profile;
     }
 
-    private boolean aim, autoclicker, cinematic, elytra, jesus, movement, slime, velocity, vehicle;
+    private boolean aim, autoclicker, cinematic, elytra, jesus, movement, velocity, vehicle, isvoid;
 
     public void handleExempts(long timeStamp) {
 
@@ -33,6 +34,8 @@ public class Exempt {
         this.cinematic = rotationData.getCinematicProcessor().isCinematic();
 
         this.movement = movementData.getDeltaXZ() == 0D && movementData.getDeltaY() == 0D;
+
+        this.isvoid = ServerVersion.getVersion().isHigherThan(ServerVersion.v1_18_R1) ? (movementData.getLocation().getY() < -70.0) : (movementData.getLocation().getY() < 0.0);
     }
 
     public boolean aim() {
@@ -65,5 +68,9 @@ public class Exempt {
 
     public boolean vehicle() {
         return this.vehicle;
+    }
+
+    public boolean isvoid() {
+        return this.isvoid;
     }
 }
