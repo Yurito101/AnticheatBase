@@ -28,11 +28,6 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.Arrays;
 
-/**
- * A simple and efficient anticheat base
- *
- * @author Yurito
- */
 public class Anticheat extends JavaPlugin {
 
     private static Anticheat instance;
