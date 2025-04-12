@@ -122,6 +122,7 @@ public class Checks implements Initializer {
 
         SPEED("speed", "", "Speed Check"),
         SPEED_A("speed.a", true, "Should we enable this module?"),
+        SPEED_B("speed.b", true, "Should we enable this module?"),
         SPEED_MAX_VL("speed.max_vl", 10, "The maximum violation amount a player needs to reach in order to get punished"),
         SPEED_COMMANDS("speed.commands", Collections.singletonList("kick %player% Unfair Advantage"), "The commands that will get executed once a player reaches the maximum violation amount");
 

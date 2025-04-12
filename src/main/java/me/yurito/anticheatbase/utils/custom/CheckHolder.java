@@ -13,6 +13,7 @@ import me.yurito.anticheatbase.checks.impl.groundspoof.GroundSpoofA;
 import me.yurito.anticheatbase.checks.impl.killaura.KillAuraA;
 import me.yurito.anticheatbase.checks.impl.killaura.KillAuraB;
 import me.yurito.anticheatbase.checks.impl.speed.SpeedA;
+import me.yurito.anticheatbase.checks.impl.speed.SpeedB;
 import me.yurito.anticheatbase.checks.types.Check;
 import me.yurito.anticheatbase.managers.profile.Profile;
 import me.yurito.anticheatbase.processors.Packet;
@@ -97,7 +98,8 @@ public class CheckHolder {
                 /*
                 Speed
                  */
-                new SpeedA(this.profile)
+                new SpeedA(this.profile),
+                new SpeedB(this.profile)
         );
 
         /*
