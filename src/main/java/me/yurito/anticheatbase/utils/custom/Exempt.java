@@ -23,7 +23,7 @@ public class Exempt {
         this.profile = profile;
     }
 
-    private boolean aim, autoclicker, cinematic, elytra, jesus, movement, velocity, vehicle, isvoid;
+    private boolean aim, autoclicker, cinematic, elytra, jesus, movement, slime, velocity, vehicle, isvoid;
 
     public void handleExempts(long timeStamp) {
 
@@ -31,6 +31,8 @@ public class Exempt {
         RotationData rotationData = profile.getRotationData();
 
         //Example
+        this.slime = movementData.getSinceSlimeTicks() < 20;
+
         this.cinematic = rotationData.getCinematicProcessor().isCinematic();
 
         this.movement = movementData.getDeltaXZ() == 0D && movementData.getDeltaY() == 0D;
@@ -60,6 +62,10 @@ public class Exempt {
 
     public boolean movement() {
         return this.movement;
+    }
+
+    public boolean slime() {
+        return this.slime;
     }
 
     public boolean velocity() {
